@@ -22,7 +22,6 @@
     font-display: swap;
 }
 
-
 /*common styles*/
 body {
     font-family: "Arial", serif;
@@ -39,7 +38,7 @@ p {
     margin: 0;
 }
 
-span {
+aside span {
     display: block;
     width: 190px;
     margin: 0 auto;
@@ -60,6 +59,7 @@ li {
     margin: 0 auto;
     max-width: 1280px;
 }
+
 /*common styles*/
 
 /*header-footer styles*/
@@ -123,24 +123,24 @@ span, .tel {
     content: "";
     display: inline-block;
     position: absolute;
-    height: 18px;
+    height: 13px;
     width: 17px;
-    background: url("../images/spriteOrange.png") 117px;
+    background: url("../images/spriteOrange.png") -83px -3px no-repeat;
     pointer-events: none;
     left: -25px;
-    top: 5px;
+    top: 2px;
 }
 
 .skype:before {
     content: "";
     display: inline-block;
     position: absolute;
-    height: 18px;
+    height: 19px;
     width: 19px;
-    background: url("../images/spriteOrange.png") 136px;
+    background: url("../images/spriteOrange.png") -64px 1px no-repeat;
     pointer-events: none;
     left: -25px;
-    top: 5px;
+    top: -1px;
 }
 
 .tel:before {
@@ -152,7 +152,7 @@ span, .tel {
     background: url("../images/spriteOrange.png") 153px;
     pointer-events: none;
     left: -25px;
-    top: 5px;
+    top: 0px;
 }
 
 nav {
@@ -210,18 +210,19 @@ footer {
     padding-top: 20px;
 }
 
+footer div {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
 .footTels, .email_skype {
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .links_1 a, .links_2 a {
     text-decoration: none;
     font: normal 14px/26px Arial, sans-serif;
     color: #666666;
-}
-
-.links_1, .links_2 {
-    margin-bottom: 10px;
 }
 
 .tels, .emailSkype, .orderCall {
@@ -260,6 +261,7 @@ footer {
     text-align: center;
     font: normal 13px/45px Arial, sans-serif;
 }
+
 /*header-footer styles*/
 
 /*main styles*/
@@ -449,6 +451,7 @@ aside > ul > li:last-child {
 aside > ul > li:nth-child(3):hover .hidden_list {
     display: block;
 }
+
 /*main styles*/
 
 /*price styles*/
@@ -570,6 +573,7 @@ tbody tr td:last-child {
 .price_figures .price_p {
     font-size: 13px;
 }
+
 /*price styles*/
 
 /*contacts_styles_begin (also in media)*/
@@ -582,11 +586,10 @@ h4 {
     content: "";
     display: block;
     height: 8px;
-    background: linear-gradient(to bottom, rgba(31,31,86,0.1) 0%,rgba(31,31,86,0) 100%);
+    background: linear-gradient(to bottom, rgba(31, 31, 86, 0.1) 0%, rgba(31, 31, 86, 0) 100%);
 }
 
-
-.Contacts div  {
+.Contacts div {
     font-size: 14px;
     vertical-align: top;
 }
@@ -599,7 +602,7 @@ h4 {
     text-decoration: underline;
 }
 
-.Contacts  div {
+.Contacts div {
     display: inline-block;
     width: 25%;
     min-width: 160px;
@@ -612,6 +615,7 @@ h4 {
     background: #f6f6f9;
     margin-top: 20px;
 }
+
 .map-back {
     padding: 35px 0;
 }
@@ -628,7 +632,6 @@ iframe {
     height: 300px;
 }
 
-
 .name, .phone, .subject, textarea {
     border: solid 1px #c5c5d4;
     border-radius: 2px;
@@ -638,12 +641,12 @@ iframe {
     font: italic 13px Arial, sans-serif;
 }
 
-
 .back {
     float: right;
     width: 49%;
 
 }
+
 .name {
     width: 49%;
 }
@@ -652,6 +655,7 @@ iframe {
     float: right;
     width: 49%;
 }
+
 .subject, textarea {
     width: 100%;
 }
@@ -675,6 +679,7 @@ textarea {
     display: block;
     float: left;
 }
+
 .news {
     width: 56%;
     font: normal 13px Arial, sans-serif;
@@ -697,17 +702,15 @@ textarea {
     background-color: #fd8300;
     color: #fff;
 }
+
 /*contacts_styles_end*/
 
 /*medias*/
 @media screen and (max-width: 1125px) {
-    .figures {
-        display: block;
-    }
-
     .resize {
         width: 90%;
     }
+
     .main {
         width: 100%;
     }
@@ -743,7 +746,7 @@ textarea {
 
 @media screen and (max-width: 940px) {
     .orderCall {
-        padding-left: 40%;
+        margin: 10px auto 0;
     }
 
     .menu li {
@@ -756,7 +759,15 @@ textarea {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 688px) {
+    .orderCall {
+        margin: 0;
+    }
+
     .contacts {
         padding: 65px 0 5px;
     }
@@ -792,6 +803,7 @@ textarea {
     .menu li {
         font: bold 30px/70px Arial, sans-serif;
     }
+
     /*hamburger*/
     .hamburger {
         display: block;
@@ -827,8 +839,8 @@ textarea {
         transform: scale(2);
         z-index: 3;
     }
-    /*hamburger*/
 
+    /*hamburger*/
     .Contacts div {
         width: 20%;
     }
