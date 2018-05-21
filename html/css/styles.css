@@ -220,6 +220,10 @@ footer {
     color: #666666;
 }
 
+.links_1, .links_2 {
+    margin-bottom: 10px;
+}
+
 .tels, .emailSkype, .orderCall {
     padding-left: 30px;
 }
